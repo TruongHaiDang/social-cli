@@ -6,6 +6,7 @@
 #define YOUTUBE_H
 
 #include <string>
+#include <curl/curl.h>
 
 using namespace std;
 
@@ -14,11 +15,10 @@ class youtube {
         youtube();
         ~youtube();
 
-        void auth();
+        void auth(std::string client_id);
 
     private:
         std::string token;
-        std::string base_url;
 };
 
 
