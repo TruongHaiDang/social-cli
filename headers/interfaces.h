@@ -11,7 +11,7 @@ enum class SocialMediaPlatform {
     Youtube,
     Facebook,
     TikTok,
-    Portfolio,
+    Custom,
     Unknown
 };
 

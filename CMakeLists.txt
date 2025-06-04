@@ -16,10 +16,7 @@ find_package(CLI11)
 find_package(CURL)
 
 add_subdirectory(headers)
-add_subdirectory(libs/facebook)
+add_subdirectory(libs/youtube)
 
-add_executable(${TARGET_NAME} main.cpp
-        headers/interfaces.h
-        libs/facebook/Facebook.cpp
-        libs/facebook/Facebook.h)
+add_executable(${TARGET_NAME} main.cpp)
 target_link_libraries(${TARGET_NAME} CLI11::CLI11 CURL::libcurl)
